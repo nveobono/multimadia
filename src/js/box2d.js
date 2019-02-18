@@ -21,7 +21,25 @@ function init(){
 
     createFloor();
 
+    //Crear algunos cuerpos con formas simples
+    createRectangularBody();
+    createCircularBody();
+    createSimplePolygonBody();
+
+    //Crear un cuerpo combinando dos formas
+    createComplexBody();
+
+    //Unir dos cuerpos mediante una articulación (revolute joint)
+    createRevoluteJoint();
+
+    //Crear un cuerpo con datos especiales del usuario
+    createSpecialBody();
+
+    //Crear contact listiner y registrar los eventos
+    listenForContact();
+
     setupDebugDraw();
+    animate();
 }
 
 function createFloor(){
@@ -58,4 +76,190 @@ function setupDebugDraw(){
     
     //Empezar a utilizar el dibujo de depuración en el mundo
     world.SetDebugDraw(debugDraw);
+}
+
+var timeStep = 1/60;
+
+//La iteraciónsugerida para Box2D es 8 para velocidad y 3 para posicion.
+var velocityIterations = 8;
+var positionIterations = 3;
+
+function animate(){
+    world.Step(timeStep, velocityIterations, positionIterations);
+    world.ClearForces();
+    world.DrawDebugData();
+
+    setTimeout(animate, timeStep);
+}
+
+function createRectangularBody(){
+    var bodyDef = new b2BodyDef;
+    bodyDef.type = b2Body.b2_dynamicBody;
+    bodyDef.position.x = 40/scale;
+    bodyDef.position.y = 100/scale;
+
+    var fixtureDef = new b2FixtureDef;
+    fixtureDef.density = 1.0;
+    fixtureDef.friction = 0.5;
+    fixtureDef.restitution = 0.3;
+
+    fixtureDef.shape = new b2PolygonShape;
+    fixtureDef.shape.SetAsBox(30/scale, 50/scale);
+
+    var body = world.CreateBody(bodyDef);
+    var fixture = body.CreateFixture(fixtureDef);
+}
+
+function createCircularBody(){
+    var bodyDef = new b2BodyDef;
+    bodyDef.type = b2Body.b2_dynamicBody;
+    bodyDef.position.x = 130/scale;
+    bodyDef.position.y = 100/scale;
+
+    var fixtureDef = new b2FixtureDef;
+    fixtureDef.density = 1.0;
+    fixtureDef.friction = 0.5;
+    fixtureDef.restitution = 0.7;
+
+    fixtureDef.shape = new b2CircleShape(30/scale);
+
+    var body = world.CreateBody(bodyDef);
+    var fixture = body.CreateFixture(fixtureDef);
+}
+
+function createSimplePolygonBody(){
+    var bodyDef = new b2BodyDef;
+    bodyDef.type = b2Body.b2_dynamicBody;
+    bodyDef.position.x = 230/scale;
+    bodyDef.position.y = 50/scale;
+    var fixtureDef = new b2FixtureDef;
+    fixtureDef.density = 1.0;
+    fixtureDef.friction = 0.5;
+    fixtureDef.restitution = 0.2;
+    fixtureDef.shape = new b2PolygonShape;
+    //Crear un array de puntos b2Vec2 en la direccion de las agulas del reloj
+    var points = [
+        new b2Vec2(0,0),
+        new b2Vec2(40/scale,50/scale),
+        new b2Vec2(50/scale,100/scale),
+        new b2Vec2(-50/scale,100/scale),
+        new b2Vec2(-40/scale,50/scale),
+    ];
+    //Usar SetAsArray para definir la forma utilizadando el array de puntos 
+    fixtureDef.shape.SetAsArray(points,points.length);
+
+    var body = world.CreateBody(bodyDef);
+    var fixture = body.CreateFixture(fixtureDef);
+}
+
+function createComplexBody(){
+    var bodyDef = new b2BodyDef;
+    bodyDef.type = b2Body.b2_dynamicBody;
+    bodyDef.position.x = 350/scale;
+    bodyDef.position.y = 50/scale;
+    var body = world.CreateBody(bodyDef);
+    //Crear el primer accesorio y añadir una forma circular al cuerpo
+    var fixtureDef = new b2FixtureDef;
+    fixtureDef.density = 1.0;
+    fixtureDef.friction = 0.5;
+    fixtureDef.restitution = 0.7;
+    fixtureDef.shape = new b2CircleShape(40/scale);
+    body.CreateFixture(fixtureDef);
+    //Crear el segundo accesorio y añadir una forma poligonal al cuerpo
+    fixtureDef.shape = new b2PolygonShape;
+    var points = [
+        new b2Vec2(0,0),
+        new b2Vec2(40/scale,50/scale),
+        new b2Vec2(50/scale,100/scale),
+        new b2Vec2(-50/scale,100/scale),
+        new b2Vec2(-40/scale,50/scale),
+    ];
+    fixtureDef.shape.SetAsArray(points,points.length);
+    body.CreateFixture(fixtureDef);
+}
+
+function createRevoluteJoint(){
+    //Definir el primer cuerpo
+    var bodyDef1 = new b2BodyDef;
+    bodyDef1.type = b2Body.b2_dynamicBody;
+    bodyDef1.position.x = 480/scale;
+    bodyDef1.position.y = 50/scale;
+    var body1 = world.CreateBody(bodyDef1);
+    
+    //Crear el primer accesorio y añadir una forma regtangular al cuerppo
+    var fixtureDef1 = new b2FixtureDef;
+    fixtureDef1.density = 1.0;
+    fixtureDef1.friction = 0.5;
+    fixtureDef1.restitution = 0.5;
+    fixtureDef1.shape = new b2PolygonShape;
+    fixtureDef1.shape.SetAsBox(50/scale,10/scale);
+
+    body1.CreateFixture(fixtureDef1);
+    
+    // Definir un segundo cuerpo
+    var bodyDef2 = new b2BodyDef;
+    bodyDef2.type = b2Body.b2_dynamicBody;
+    bodyDef2.position.x = 470/scale;
+    bodyDef2.position.y = 50/scale;
+    var body2 = world.CreateBody(bodyDef2);
+
+    //Creaar el segundo accesorio y añadir un poligono al cuerpo
+    var fixtureDef2 = new b2FixtureDef;
+    fixtureDef2.density = 1.0;
+    fixtureDef2.friction = 0.5;
+    fixtureDef2.restitution = 0.5;
+    fixtureDef2.shape = new b2PolygonShape;
+    var points = [
+        new b2Vec2(0,0),
+        new b2Vec2(40/scale,50/scale),
+        new b2Vec2(50/scale,100/scale),
+        new b2Vec2(-50/scale,100/scale),
+        new b2Vec2(-40/scale,50/scale),
+    ];
+    fixtureDef2.shape.SetAsArray(points,points.length);
+    body2.CreateFixture(fixtureDef2);
+    
+    //Crear una articulación entre el body1 y el body2
+    var jointDef = new b2RevoluteJointDef;
+    var jointCenter = new b2Vec2(470/scale,50/scale);
+
+    jointDef.Initialize(body1, body2, jointCenter);
+    world.CreateJoint(jointDef);
+}
+
+var specialBody;
+function createSpecialBody(){
+    var bodyDef = new b2BodyDef;
+    bodyDef.type = b2Body.b2_dynamicBody;
+    bodyDef.position.x = 450/scale;
+    bodyDef.position.y = 0/scale;
+
+    specialBody = world.CreateBody(bodyDef);
+    specialBody.SetUserData({name:"special",life:250})
+
+    //Crear un accesorio para unir una forma circular al cuerpo
+    var fixtureDef = new b2FixtureDef;
+    fixtureDef.density = 1.0;
+    fixtureDef.friction = 0.5;
+    fixtureDef.restitution = 0.5;
+
+    fixtureDef.shape = new b2CircleShape(30/scale);
+
+    var fixture = specialBody.CreateFixture(fixtureDef);
+}
+
+function listenForContact(){
+    var listener = new Box2D.Dynamics.b2ContactListener;
+    listener.PostSolve = function(contact,impulse){
+        var body1 = contact.GetFixtureA().GetBody();
+        var body2 = contact.GetFixtureB().GetBody();
+    
+        //Si cualquiera de los cuerpos es el special body, reduzca su vida
+        if (body1 == specialBody || body2 == specialBody){
+            var impulseAlongNormal = impulse.normalImpulses[0];
+            specialBody.GetUserData().life -= impulseAlongNormal;
+            console.log("The special body was in a collision with impulse", impulseAlongNormal,"and its life has now become ",specialBody.GetUserData().life);
+        }
+    };
+    world.SetContactListener(listener);
 }
