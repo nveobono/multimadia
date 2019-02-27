@@ -159,11 +159,29 @@ var levels = {
         {
             // Primer nivel
             foreground: 'desert-foreground',
-            background: 'clouds-background',
+            background: 'nivel1',
             entities: []
         },
         {
             // Segundo nivel
+            foreground: 'desert-foreground',
+            background: 'clouds-background',
+            entities: []
+        },
+        {
+            // Tercer nivel
+            foreground: 'desert-foreground',
+            background: 'clouds-background',
+            entities: []
+        },
+        {
+            // Cuarto nivel
+            foreground: 'desert-foreground',
+            background: 'clouds-background',
+            entities: []
+        },
+        {
+            // Quinto nivel
             foreground: 'desert-foreground',
             background: 'clouds-background',
             entities: []
