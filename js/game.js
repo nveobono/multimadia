@@ -426,13 +426,13 @@ var levels = {
 
                 { type: "block", name: "wood", x: 520, y: 380, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "glass", x: 520, y: 280, angle: 90, width: 100, height: 25 },
-                { type: "villain", name: "vox", x: 520, y: 205, calories: 590 },
+                { type: "villain", name: "enemigo_2", x: 520, y: 205, calories: 590 },
 
                 { type: "block", name: "wood", x: 620, y: 380, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "glass", x: 620, y: 280, angle: 90, width: 100, height: 25 },
-                { type: "villain", name: "kim", x: 620, y: 205, calories: 420 },
+                { type: "villain", name: "enemigo_3", x: 620, y: 205, calories: 420 },
 
-                { type: "hero", name: "iglesias", x: 80, y: 405 },
+                { type: "hero", name: "abascal", x: 80, y: 405 },
                 { type: "hero", name: "rivera", x: 140, y: 405 },
             ]
         },
@@ -453,9 +453,9 @@ var levels = {
                 { type: "block", name: "glass", x: 770, y: 255, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "wood", x: 720, y: 192.5, width: 100, height: 25 },
 
-                { type: "villain", name: "vox", x: 715, y: 155, calories: 590 },
-                { type: "villain", name: "kim", x: 670, y: 405, calories: 420 },
-                { type: "villain", name: "putin", x: 765, y: 400, calories: 150 },
+                { type: "villain", name: "enemigo_1", x: 715, y: 155, calories: 590 },
+                { type: "villain", name: "enemigo_4", x: 670, y: 405, calories: 420 },
+                { type: "villain", name: "enemigo_5", x: 765, y: 400, calories: 150 },
 
                 { type: "hero", name: "sanchez", x: 30, y: 415 },
                 { type: "hero", name: "iglesias", x: 80, y: 405 },
@@ -483,13 +483,13 @@ var levels = {
                 { type: "block", name: "glass", x: 840, y: 380, angle: 90, width: 100, height: 15 },
 
                 //Coloco los villanos
-                { type: "villain", name: "merkel", x: 710, y: 280, calories: 20 },
-                { type: "villain", name: "cupcake", x: 666, y: 405, calories: 520 },
-                { type: "villain", name: "donald", x: 780, y: 360, calories: 250 },
+                { type: "villain", name: "enemigo_2", x: 710, y: 280, calories: 20 },
+                { type: "villain", name: "enemigo_1", x: 666, y: 405, calories: 520 },
+                { type: "villain", name: "enemigo_2", x: 780, y: 360, calories: 250 },
 
-                { type: "hero", name: "rajoy", x: 30, y: 415 },
+                { type: "hero", name: "rivera", x: 30, y: 415 },
                 { type: "hero", name: "casado", x: 80, y: 405 },
-                { type: "hero", name: "obiang", x: 140, y: 405 },
+                { type: "hero", name: "abascal", x: 140, y: 405 },
                 
             ]
         },
@@ -507,22 +507,22 @@ var levels = {
                 //Coloco villanos a la vez en su puesto
                 { type: "block", name: "wood", x: 510, y: 280, angle: 90, width: 50, height: 15 },
                 { type: "block", name: "glass", x: 510, y: 220, width: 100, height: 25 },
-                { type: "villain", name: "cupcake", x: 510, y: 210, calories: 120 },
+                { type: "villain", name: "enemigo_2", x: 510, y: 210, calories: 120 },
                 //Otro
                 { type: "block", name: "wood", x: 620, y: 380, angle: 90, width: 100, height: 15 },
                 { type: "block", name: "glass", x: 620, y: 320, width: 100, height: 25 },
-                { type: "villain", name: "cifuentes", x: 620, y: 310, calories: 180 },
+                { type: "villain", name: "enemigo_3", x: 620, y: 310, calories: 180 },
                 //Otro más 
                 { type: "block", name: "wood", x: 720, y: 280, angle: 90, width: 50, height: 15 },
                 { type: "block", name: "glass", x: 720, y: 220, width: 100, height: 25 },
-                { type: "villain", name: "donald", x: 720, y: 210, calories: 190 },
+                { type: "villain", name: "enemigo_1", x: 720, y: 210, calories: 190 },
                 //Otro más alto
                 { type: "block", name: "wood", x: 820, y: 280, angle: 90, width: 140, height: 15 },
                 { type: "block", name: "glass", x: 820, y: 220, width: 100, height: 25 },
-                { type: "villain", name: "kim", x: 820, y: 210, calories: 130 },
+                { type: "villain", name: "enemigo_6", x: 820, y: 210, calories: 130 },
                 
                 // Coloco heroes, todo fresas
-                { type: "hero", name: "obiang", x: 30, y: 415 },
+                { type: "hero", name: "iglesias", x: 30, y: 415 },
                 { type: "hero", name: "rajoy", x: 80, y: 405 },
                 { type: "hero", name: "sanchez", x: 140, y: 405 },
             ]
@@ -552,12 +552,12 @@ var levels = {
                 { type: "block", name: "rock", x: 670, y: 215, angle: 90, width: 50, height: 15 },
                                 
                 //Villano arriba
-                { type: "villain", name: "merkel", x: 520, y: 215, calories: 130 },
-                { type: "villain", name: "kim", x: 720, y: 215, calories: 190 },
-                { type: "villain", name: "putin", x: 620, y: 215, calories: 240 },
+                { type: "villain", name: "enemigo_1", x: 520, y: 215, calories: 130 },
+                { type: "villain", name: "enemigo_2", x: 720, y: 215, calories: 190 },
+                { type: "villain", name: "enemigo_1", x: 620, y: 215, calories: 240 },
                 //Villanos abajo
-                { type: "villain", name: "vox", x: 560, y: 380, calories: 130 },
-                { type: "villain", name: "cupcake", x: 660, y: 380, calories: 130 },
+                { type: "villain", name: "enemigo_2", x: 560, y: 380, calories: 130 },
+                { type: "villain", name: "enemigo_6", x: 660, y: 380, calories: 130 },
 
                 // Coloco heroes, todo fresas
                 { type: "hero", name: "rajoy", x: 30, y: 415 },
@@ -649,15 +649,15 @@ var entities = {
             friction: 1.5,
             restitution: 0.2,
         },
-        "vox": {
+        "enemigo_1": {
             shape: "circle",
-            fullHealth: 40,
+            fullHealth: 150,
             radius: 25,
             density: 1,
             friction: 0.5,
             restitution: 0.4,
         },
-        "putin": {
+        "enemigo_2": {
             shape: "rectangle",
             fullHealth: 80,
             width: 50,
@@ -666,7 +666,33 @@ var entities = {
             friction: 0.5,
             restitution: 0.7,
         },
-        "kim": {
+        "enemigo_3": {
+            shape: "rectangle",
+            fullHealth: 50,
+            width: 50,
+            height: 50,
+            density: 1,
+            friction: 0.5,
+            restitution: 0.6,
+        },
+        "enemigo_4": {
+            shape: "circle",
+            fullHealth: 40,
+            radius: 25,
+            density: 1,
+            friction: 0.5,
+            restitution: 0.4,
+        },
+        "enemigo_5": {
+            shape: "rectangle",
+            fullHealth: 80,
+            width: 50,
+            height: 50,
+            density: 1,
+            friction: 0.5,
+            restitution: 0.7,
+        },
+        "enemigo_6": {
             shape: "rectangle",
             fullHealth: 50,
             width: 50,
@@ -692,7 +718,7 @@ var entities = {
         "sanchez": {
             shape: "circle",
             radius: 15,
-            density: 2.0,
+            density: 1.5,
             friction: 0.5,
             restitution: 0.4,
         },
@@ -705,21 +731,13 @@ var entities = {
             friction: 0.5,
             restitution: 0.5,
         },
-        "pineapple": {
+        "abascal": {
             shape: "rectangle",
-            fullHealth: 50,
             width: 40,
             height: 50,
             density: 1,
             friction: 0.5,
             restitution: 0.6,
-        },
-        "obiang": {
-            shape: "circle",
-            radius: 25,
-            density: 1.5,
-            friction: 0.5,
-            restitution: 0.4,
         },
         "casado": {
             shape: "circle",
@@ -727,40 +745,6 @@ var entities = {
             density: 1.5,
             friction: 0.5,
             restitution: 0.4,
-        },
-        "merkel": {
-            shape: "rectangle",
-            fullHealth: 80,
-            width: 40,
-            height: 60,
-            density: 1,
-            friction: 0.5,
-            restitution: 0.7,
-        },
-        "cupcake": {
-            shape: "circle",
-            fullHealth: 40,
-            radius: 25,
-            density: 1,
-            friction: 0.5,
-            restitution: 0.4,
-        },
-        "donald": {
-            shape: "circle",
-            fullHealth: 40,
-            radius: 25,
-            density: 1,
-            friction: 0.5,
-            restitution: 0.4,
-        },
-        "cifuentes": {
-            shape: "rectangle",
-            fullHealth: 50,
-            width: 40,
-            height: 50,
-            density: 1,
-            friction: 0.5,
-            restitution: 0.6,
         },
     },
     // Tomar la entidad crear un cuerpo Box2D y añadirlo al mundo
