@@ -457,7 +457,7 @@ var levels = {
                 { type: "villain", name: "fries", x: 670, y: 405, calories: 420 },
                 { type: "villain", name: "putin", x: 765, y: 400, calories: 150 },
 
-                { type: "hero", name: "strawberry", x: 30, y: 415 },
+                { type: "hero", name: "sanchez", x: 30, y: 415 },
                 { type: "hero", name: "iglesias", x: 80, y: 405 },
                 { type: "hero", name: "apple", x: 140, y: 405 },
             ]
@@ -488,13 +488,13 @@ var levels = {
                 { type: "villain", name: "donald", x: 780, y: 360, calories: 250 },
 
                 { type: "hero", name: "rajoy", x: 30, y: 415 },
-                { type: "hero", name: "watermelon", x: 80, y: 405 },
-                { type: "hero", name: "pear", x: 140, y: 405 },
+                { type: "hero", name: "casado", x: 80, y: 405 },
+                { type: "hero", name: "obiang", x: 140, y: 405 },
                 
             ]
         },
 
-        {   // Cuarto nivel. Strawberry lvl  
+        {   // Cuarto nivel. Sanchez lvl  
             foreground: 'backgroundDefault',
             background: 'backgroundDefault',
             entities: [
@@ -522,9 +522,9 @@ var levels = {
                 { type: "villain", name: "fries", x: 820, y: 210, calories: 130 },
                 
                 // Coloco heroes, todo fresas
-                { type: "hero", name: "strawberry", x: 30, y: 415 },
-                { type: "hero", name: "strawberry", x: 80, y: 405 },
-                { type: "hero", name: "strawberry", x: 140, y: 405 },
+                { type: "hero", name: "obiang", x: 30, y: 415 },
+                { type: "hero", name: "rajoy", x: 80, y: 405 },
+                { type: "hero", name: "sanchez", x: 140, y: 405 },
             ]
         },
         {   // Quinto nivel  cocos ??????
@@ -561,7 +561,7 @@ var levels = {
 
                 // Coloco heroes, todo fresas
                 { type: "hero", name: "rajoy", x: 30, y: 415 },
-                { type: "hero", name: "strawberry", x: 80, y: 405 },
+                { type: "hero", name: "sanchez", x: 80, y: 405 },
             ]
         }
     ],
@@ -689,7 +689,7 @@ var entities = {
             friction: 0.5,
             restitution: 0.4,
         },
-        "strawberry": {
+        "sanchez": {
             shape: "circle",
             radius: 15,
             density: 2.0,
@@ -714,14 +714,14 @@ var entities = {
             friction: 0.5,
             restitution: 0.6,
         },
-        "pear": {
+        "obiang": {
             shape: "circle",
             radius: 25,
             density: 1.5,
             friction: 0.5,
             restitution: 0.4,
         },
-        "watermelon": {
+        "casado": {
             shape: "circle",
             radius: 30,
             density: 1.5,
