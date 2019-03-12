@@ -426,7 +426,7 @@ var levels = {
 
                 { type: "block", name: "wood", x: 520, y: 380, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "glass", x: 520, y: 280, angle: 90, width: 100, height: 25 },
-                { type: "villain", name: "burger", x: 520, y: 205, calories: 590 },
+                { type: "villain", name: "vox", x: 520, y: 205, calories: 590 },
 
                 { type: "block", name: "wood", x: 620, y: 380, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "glass", x: 620, y: 280, angle: 90, width: 100, height: 25 },
@@ -453,7 +453,7 @@ var levels = {
                 { type: "block", name: "glass", x: 770, y: 255, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "wood", x: 720, y: 192.5, width: 100, height: 25 },
 
-                { type: "villain", name: "burger", x: 715, y: 155, calories: 590 },
+                { type: "villain", name: "vox", x: 715, y: 155, calories: 590 },
                 { type: "villain", name: "fries", x: 670, y: 405, calories: 420 },
                 { type: "villain", name: "putin", x: 765, y: 400, calories: 150 },
 
@@ -556,7 +556,7 @@ var levels = {
                 { type: "villain", name: "fries", x: 720, y: 215, calories: 190 },
                 { type: "villain", name: "putin", x: 620, y: 215, calories: 240 },
                 //Villanos abajo
-                { type: "villain", name: "burger", x: 560, y: 380, calories: 130 },
+                { type: "villain", name: "vox", x: 560, y: 380, calories: 130 },
                 { type: "villain", name: "cupcake", x: 660, y: 380, calories: 130 },
 
                 // Coloco heroes, todo fresas
@@ -649,7 +649,7 @@ var entities = {
             friction: 1.5,
             restitution: 0.2,
         },
-        "burger": {
+        "vox": {
             shape: "circle",
             fullHealth: 40,
             radius: 25,
