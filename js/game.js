@@ -650,8 +650,8 @@ var entities = {
             restitution: 0.2,
         },
         "enemigo_1": {
-            shape: "circle",
-            fullHealth: 150,
+            shape: "rectangle",
+            fullHealth: 60,
             radius: 25,
             density: 1,
             friction: 0.5,
@@ -732,7 +732,7 @@ var entities = {
             restitution: 0.5,
         },
         "abascal": {
-            shape: "rectangle",
+            shape: "circle",
             width: 40,
             height: 50,
             density: 1,
