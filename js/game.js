@@ -430,7 +430,7 @@ var levels = {
 
                 { type: "block", name: "wood", x: 620, y: 380, angle: 90, width: 100, height: 25 },
                 { type: "block", name: "glass", x: 620, y: 280, angle: 90, width: 100, height: 25 },
-                { type: "villain", name: "fries", x: 620, y: 205, calories: 420 },
+                { type: "villain", name: "kim", x: 620, y: 205, calories: 420 },
 
                 { type: "hero", name: "iglesias", x: 80, y: 405 },
                 { type: "hero", name: "rivera", x: 140, y: 405 },
@@ -454,7 +454,7 @@ var levels = {
                 { type: "block", name: "wood", x: 720, y: 192.5, width: 100, height: 25 },
 
                 { type: "villain", name: "vox", x: 715, y: 155, calories: 590 },
-                { type: "villain", name: "fries", x: 670, y: 405, calories: 420 },
+                { type: "villain", name: "kim", x: 670, y: 405, calories: 420 },
                 { type: "villain", name: "putin", x: 765, y: 400, calories: 150 },
 
                 { type: "hero", name: "sanchez", x: 30, y: 415 },
@@ -519,7 +519,7 @@ var levels = {
                 //Otro más alto
                 { type: "block", name: "wood", x: 820, y: 280, angle: 90, width: 140, height: 15 },
                 { type: "block", name: "glass", x: 820, y: 220, width: 100, height: 25 },
-                { type: "villain", name: "fries", x: 820, y: 210, calories: 130 },
+                { type: "villain", name: "kim", x: 820, y: 210, calories: 130 },
                 
                 // Coloco heroes, todo fresas
                 { type: "hero", name: "obiang", x: 30, y: 415 },
@@ -553,7 +553,7 @@ var levels = {
                                 
                 //Villano arriba
                 { type: "villain", name: "merkel", x: 520, y: 215, calories: 130 },
-                { type: "villain", name: "fries", x: 720, y: 215, calories: 190 },
+                { type: "villain", name: "kim", x: 720, y: 215, calories: 190 },
                 { type: "villain", name: "putin", x: 620, y: 215, calories: 240 },
                 //Villanos abajo
                 { type: "villain", name: "vox", x: 560, y: 380, calories: 130 },
@@ -660,16 +660,16 @@ var entities = {
         "putin": {
             shape: "rectangle",
             fullHealth: 80,
-            width: 40,
-            height: 60,
+            width: 50,
+            height: 50,
             density: 1,
             friction: 0.5,
             restitution: 0.7,
         },
-        "fries": {
+        "kim": {
             shape: "rectangle",
             fullHealth: 50,
-            width: 40,
+            width: 50,
             height: 50,
             density: 1,
             friction: 0.5,
