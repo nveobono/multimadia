@@ -433,7 +433,7 @@ var levels = {
                 { type: "villain", name: "fries", x: 620, y: 205, calories: 420 },
 
                 { type: "hero", name: "iglesias", x: 80, y: 405 },
-                { type: "hero", name: "apple", x: 140, y: 405 },
+                { type: "hero", name: "rivera", x: 140, y: 405 },
             ]
         },
         {   // Segundo nivel
@@ -459,7 +459,7 @@ var levels = {
 
                 { type: "hero", name: "sanchez", x: 30, y: 415 },
                 { type: "hero", name: "iglesias", x: 80, y: 405 },
-                { type: "hero", name: "apple", x: 140, y: 405 },
+                { type: "hero", name: "rivera", x: 140, y: 405 },
             ]
         },
         // CARL NIVELES AÑADIDOS 
@@ -675,7 +675,7 @@ var entities = {
             friction: 0.5,
             restitution: 0.6,
         },
-        "apple": {
+        "rivera": {
             shape: "circle",
             radius: 25,
             density: 1.5,
