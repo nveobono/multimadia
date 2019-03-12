@@ -487,7 +487,7 @@ var levels = {
                 { type: "villain", name: "cupcake", x: 666, y: 405, calories: 520 },
                 { type: "villain", name: "Donut", x: 780, y: 360, calories: 250 },
 
-                { type: "hero", name: "coconut", x: 30, y: 415 },
+                { type: "hero", name: "rajoy", x: 30, y: 415 },
                 { type: "hero", name: "watermelon", x: 80, y: 405 },
                 { type: "hero", name: "pear", x: 140, y: 405 },
                 
@@ -560,7 +560,7 @@ var levels = {
                 { type: "villain", name: "cupcake", x: 660, y: 380, calories: 130 },
 
                 // Coloco heroes, todo fresas
-                { type: "hero", name: "coconut", x: 30, y: 415 },
+                { type: "hero", name: "rajoy", x: 30, y: 415 },
                 { type: "hero", name: "strawberry", x: 80, y: 405 },
             ]
         }
@@ -698,7 +698,7 @@ var entities = {
         },
         // CARL ENTIDADES NUEVAS 
         // Nuevas entidades definidas
-        "coconut": {
+        "rajoy": {
             shape: "circle",
             radius: 25,
             density: 1.5,
