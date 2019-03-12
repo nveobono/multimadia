@@ -479,13 +479,13 @@ var levels = {
                 { type: "block", name: "glass", x: 710, y: 380, angle: 90, width: 150, height: 35 },
                 // Uno tumbado para poner un villano encima , sin angulo
                 { type: "block", name: "wood", x: 770, y: 380, width: 100, height: 25 },
-                //Ultimo para impedir que el donut nuede
+                //Ultimo para impedir que el donald nuede
                 { type: "block", name: "glass", x: 840, y: 380, angle: 90, width: 100, height: 15 },
 
                 //Coloco los villanos
                 { type: "villain", name: "sodaglass", x: 710, y: 280, calories: 20 },
                 { type: "villain", name: "cupcake", x: 666, y: 405, calories: 520 },
-                { type: "villain", name: "Donut", x: 780, y: 360, calories: 250 },
+                { type: "villain", name: "donald", x: 780, y: 360, calories: 250 },
 
                 { type: "hero", name: "rajoy", x: 30, y: 415 },
                 { type: "hero", name: "watermelon", x: 80, y: 405 },
@@ -515,7 +515,7 @@ var levels = {
                 //Otro más 
                 { type: "block", name: "wood", x: 720, y: 280, angle: 90, width: 50, height: 15 },
                 { type: "block", name: "glass", x: 720, y: 220, width: 100, height: 25 },
-                { type: "villain", name: "Donut", x: 720, y: 210, calories: 190 },
+                { type: "villain", name: "donald", x: 720, y: 210, calories: 190 },
                 //Otro más alto
                 { type: "block", name: "wood", x: 820, y: 280, angle: 90, width: 140, height: 15 },
                 { type: "block", name: "glass", x: 820, y: 220, width: 100, height: 25 },
@@ -745,7 +745,7 @@ var entities = {
             friction: 0.5,
             restitution: 0.4,
         },
-        "Donut": {
+        "donald": {
             shape: "circle",
             fullHealth: 40,
             radius: 25,
