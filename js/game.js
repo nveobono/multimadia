@@ -483,7 +483,7 @@ var levels = {
                 { type: "block", name: "glass", x: 840, y: 380, angle: 90, width: 100, height: 15 },
 
                 //Coloco los villanos
-                { type: "villain", name: "sodaglass", x: 710, y: 280, calories: 20 },
+                { type: "villain", name: "merkel", x: 710, y: 280, calories: 20 },
                 { type: "villain", name: "cupcake", x: 666, y: 405, calories: 520 },
                 { type: "villain", name: "donald", x: 780, y: 360, calories: 250 },
 
@@ -511,7 +511,7 @@ var levels = {
                 //Otro
                 { type: "block", name: "wood", x: 620, y: 380, angle: 90, width: 100, height: 15 },
                 { type: "block", name: "glass", x: 620, y: 320, width: 100, height: 25 },
-                { type: "villain", name: "pizza", x: 620, y: 310, calories: 180 },
+                { type: "villain", name: "cifuentes", x: 620, y: 310, calories: 180 },
                 //Otro más 
                 { type: "block", name: "wood", x: 720, y: 280, angle: 90, width: 50, height: 15 },
                 { type: "block", name: "glass", x: 720, y: 220, width: 100, height: 25 },
@@ -552,7 +552,7 @@ var levels = {
                 { type: "block", name: "rock", x: 670, y: 215, angle: 90, width: 50, height: 15 },
                                 
                 //Villano arriba
-                { type: "villain", name: "sodaglass", x: 520, y: 215, calories: 130 },
+                { type: "villain", name: "merkel", x: 520, y: 215, calories: 130 },
                 { type: "villain", name: "fries", x: 720, y: 215, calories: 190 },
                 { type: "villain", name: "putin", x: 620, y: 215, calories: 240 },
                 //Villanos abajo
@@ -728,7 +728,7 @@ var entities = {
             friction: 0.5,
             restitution: 0.4,
         },
-        "sodaglass": {
+        "merkel": {
             shape: "rectangle",
             fullHealth: 80,
             width: 40,
@@ -753,7 +753,7 @@ var entities = {
             friction: 0.5,
             restitution: 0.4,
         },
-        "pizza": {
+        "cifuentes": {
             shape: "rectangle",
             fullHealth: 50,
             width: 40,
