@@ -455,7 +455,7 @@ var levels = {
 
                 { type: "villain", name: "burger", x: 715, y: 155, calories: 590 },
                 { type: "villain", name: "fries", x: 670, y: 405, calories: 420 },
-                { type: "villain", name: "sodacan", x: 765, y: 400, calories: 150 },
+                { type: "villain", name: "putin", x: 765, y: 400, calories: 150 },
 
                 { type: "hero", name: "strawberry", x: 30, y: 415 },
                 { type: "hero", name: "orange", x: 80, y: 405 },
@@ -554,7 +554,7 @@ var levels = {
                 //Villano arriba
                 { type: "villain", name: "sodaglass", x: 520, y: 215, calories: 130 },
                 { type: "villain", name: "fries", x: 720, y: 215, calories: 190 },
-                { type: "villain", name: "sodacan", x: 620, y: 215, calories: 240 },
+                { type: "villain", name: "putin", x: 620, y: 215, calories: 240 },
                 //Villanos abajo
                 { type: "villain", name: "burger", x: 560, y: 380, calories: 130 },
                 { type: "villain", name: "cupcake", x: 660, y: 380, calories: 130 },
@@ -657,7 +657,7 @@ var entities = {
             friction: 0.5,
             restitution: 0.4,
         },
-        "sodacan": {
+        "putin": {
             shape: "rectangle",
             fullHealth: 80,
             width: 40,
